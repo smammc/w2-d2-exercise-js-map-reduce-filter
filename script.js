@@ -197,4 +197,4 @@ const places = [
 //
 // Given an array of numbers, filter out the ones that are not even and greater than 42.
 // -------------------
-const numbers = [1, 60, 112, 123, 100, 99, 73, 45];
+const numbers = [1, 30, 60, 112, 123, 100, 99, 73, 45];
