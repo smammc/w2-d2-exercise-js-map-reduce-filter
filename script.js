@@ -2,6 +2,8 @@ console.log("Ready to go! 🚀");
 
 // -------------------
 // .map() - Iteration 1
+//
+// Given an array of cities, return an array with the first letter of each city’s name capitalized
 // -------------------
 
 const cities = [
@@ -18,6 +20,8 @@ const cities = [
 
 // -------------------
 // .map() - Iteration 2
+//
+// Grade our students based on their performance on two projects (40% of final grade) and their final exam (60% of final grade)
 // -------------------
 const students = [
   {
@@ -84,6 +88,8 @@ const students = [
 
 // -------------------
 // .reduce - Iteration 1
+//
+// Calculate the average amount of calories in the menu
 // -------------------
 const menu = [
   { name: "Carrots", calories: 150 },
@@ -95,6 +101,8 @@ const menu = [
 
 // -------------------
 // .filter - Iteration 1
+//
+// Given the following array, filter the ones who are older than 18 and thus eligible to drink
 // -------------------
 const people = [
   { name: "Candice", age: 25 },
@@ -108,6 +116,8 @@ const people = [
 
 // -------------------
 // .filter - Iteration 2
+//
+// Given the following arrays of properties, filter just the ones with a pool.
 // -------------------
 const places = [
   {
@@ -184,5 +194,7 @@ const places = [
 
 // -------------------
 // .filter - Iteration 3
+//
+// Given an array of numbers, filter out the ones that are not even, and are greater than 42.
 // -------------------
 const numbers = [1, 60, 112, 123, 100, 99, 73, 45];
