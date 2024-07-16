@@ -195,6 +195,6 @@ const places = [
 // -------------------
 // .filter - Iteration 3
 //
-// Given an array of numbers, filter out the ones that are not even, and are greater than 42.
+// Given an array of numbers, filter out the ones that are not even and greater than 42.
 // -------------------
 const numbers = [1, 60, 112, 123, 100, 99, 73, 45];
