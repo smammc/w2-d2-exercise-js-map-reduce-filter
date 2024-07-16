@@ -18,6 +18,10 @@ const cities = [
   "paris",
 ];
 
+const newCities = cities.map((city) => {
+  return city[0].toUpperCase() + city.slice(1);
+});
+console.log(newCities);
 // -------------------
 // .map() - Iteration 2
 //
@@ -86,6 +90,26 @@ const students = [
   },
 ];
 
+/* const finalGrades = students.map((student) => {
+  return (
+    ((student.firstProject + student.secondProject) / 2) * 0.4 +
+    student.finalExam * 0.6
+  );
+});
+console.log(finalGrades); */
+
+const grades = (arr) => {
+  const finalGrades = arr.map((student) => {
+    const projectsGrade = (student.firstProject + student.secondProject) / 2;
+    const finalGrade = projectsGrade * 0.4 + student.finalExam * 0.6;
+    return { name: student.name, finalGrade: finalGrade };
+  });
+
+  finalGrades.sort((a, b) => b.finalGrade - a.finalGrade);
+  return finalGrades;
+};
+console.log(grades(students));
+
 // -------------------
 // .reduce - Iteration 1
 //
@@ -99,6 +123,10 @@ const menu = [
   { name: "Pizza", calories: 520 },
 ];
 
+const avgCalories = menu.reduce(function (caloriesSum, person) {
+  return caloriesSum + person.calories / menu.length;
+}, 0);
+console.log(avgCalories);
 // -------------------
 // .filter - Iteration 1
 //
@@ -113,6 +141,9 @@ const people = [
   { name: "Bill", age: 19 },
   { name: "Jonas", age: 15 },
 ];
+
+const older = people.filter((person) => person.age >= 18);
+console.log(older);
 
 // -------------------
 // .filter - Iteration 2
@@ -192,9 +223,14 @@ const places = [
   },
 ];
 
+const hasPool = places.filter((place) => place.pool === true);
+console.log(hasPool);
 // -------------------
 // .filter - Iteration 3
 //
 // Given an array of numbers, filter out the ones that are not even and greater than 42.
 // -------------------
 const numbers = [1, 30, 60, 112, 123, 100, 99, 73, 45];
+
+const result = numbers.filter((number) => number % 2 !== 0 && number > 42);
+console.log(result);
