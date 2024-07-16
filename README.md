@@ -13,4 +13,4 @@
 
 1. Given the following array, filter the ones who are older than 18 and thus eligible to drink
 2. Given the following arrays of properties, filter just the ones with a pool.
-3. Given an array of numbers, filter out the ones that are not even, and are greater than 42.
+3. Given an array of numbers, filter out the ones that are not even and greater than 42.
